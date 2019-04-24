@@ -1,0 +1,8 @@
+@import './components/shared/base.scss';
+
+.header{
+    background-image: url('./assets/Backgrounds/Bg_Header.png');
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+}

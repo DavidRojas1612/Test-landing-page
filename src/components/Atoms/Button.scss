@@ -1,0 +1,41 @@
+@import "../shared/typography.scss";
+@import "../shared/variables.scss";
+@import "../shared/mixins.scss";
+
+.button {
+  border: none;
+  color: color(white);
+  font-family: $font;
+  padding: 10px 80px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color $transform-time $easing;
+  border-radius: 50px;
+  text-transform: capitalize;
+
+  &:disabled{
+    background-color: color(grey);
+    cursor: default;
+    &:hover{
+      background-color: color(grey);
+    }
+  }
+
+
+  &--primary {
+    background: color(primary);
+    @include backgroundHover(color(primary));
+  }
+
+  &--secondary {
+    background: color(secondary);
+    @include backgroundHover(color(secondary));
+  }
+
+  &--primary__outline {
+    background: color(white);
+    color: color(primary);
+    border: 1px solid color(primary);
+  }
+}
