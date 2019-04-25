@@ -5,7 +5,7 @@ import Hour from "../../assets/Ic_Hour.svg";
 import Laptop from "../../assets/Ic_laptop.svg";
 import Workshops from "../../assets/Ic_Workshops.svg";
 import Brian from "../../assets/Ic_brain.svg";
-import Benefit from "../Molecules/Benefit";
+import ItemDescription from "../Molecules/ItemDescription";
 import "./BenefitsSection.scss";
 
 const Benefits = [
@@ -42,7 +42,7 @@ const BenefitsSection = () => (
       </h2>
       <div className="benefits__container">
         {Benefits.map(({ logo, label }, i) => (
-          <Benefit key={i} logo={logo} label={label} />
+          <ItemDescription key={i} logo={logo} label={label} />
         ))}
       </div>
     </section>

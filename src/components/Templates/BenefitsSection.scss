@@ -4,9 +4,10 @@
 .benefits{
     padding: 1rem;
     &__container{
+        flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
-        .benefit{
+        .item__description{
             flex:1;
             min-width: 50%;
         }

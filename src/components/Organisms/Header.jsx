@@ -19,7 +19,7 @@ const Header = () => {
         <div
           className="header__menu-icon"
         >
-          <Button theme="button--primary" onClick={() => setMenu(!stateMenu)}>Menu</Button>
+          <Button theme="button--primary__outline" onClick={() => setMenu(!stateMenu)}>Menu</Button>
         </div>
       </div>
     </div>

@@ -4,9 +4,9 @@ import { ReactComponent as LogoTech } from '../../assets/Ic_Tecnologys.svg'
 
 const TechnologySection = () => (
     <section className="technology">
-      <p className="technology__title">
+      <h1 className="technology__title">
        Estamos buscando incorporar gente increíble para estas tecnologías: 
-      </p>
+      </h1>
       <LogoTech className="technology__tech" />
     </section>
   )

@@ -2,9 +2,6 @@
 @import "../shared/mixins.scss";
 
 .follow{
-    display: flex;
-    flex-direction: column;
-
     &__container{
         flex-basis: 50%;
         display: flex;
@@ -26,7 +23,6 @@
         margin-bottom: 0.5rem;
     }
     &__title{
-        font-size: 2.5rem;
         font-weight: normal;
         text-align: center;
         span{

@@ -2,10 +2,11 @@
 @import "../shared/mixins.scss";
 
 .welcome{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
-
+    justify-content: center;
     &__title{
+        font-weight: normal;
         span{
             &:first-of-type, &:last-of-type{
                 font-weight: bold;
