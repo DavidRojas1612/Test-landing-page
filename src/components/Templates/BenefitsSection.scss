@@ -1,0 +1,22 @@
+@import "../shared/variables.scss";
+@import "../shared/mixins.scss";
+
+.benefits{
+    padding: 1rem;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        .benefit{
+            flex:1;
+            min-width: 50%;
+        }
+    }
+
+    &__title{
+        font-weight: normal;
+        text-align: center;
+        & span{
+            color:color(primary);
+        }
+    }
+}

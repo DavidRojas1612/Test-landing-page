@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import WelcomeSection from '../Templates/WelcomeSection';
+import TechnologySection from '../Templates/TechnologySection';
+import FollowSection from '../Templates/FollowSection';
+import BenefitsSection from "../Templates/BenefitsSection";
+const Dashboard = () => (
+  <>
+    <WelcomeSection />
+    <TechnologySection />
+    <FollowSection />
+    <BenefitsSection />
+  </>
+);
 
-const Dashboard = () => {
-  return (
-    <div>
-      <h1>Hola wolox</h1>
-    </div>
-  )
-}
-
-export default Dashboard
+export default Dashboard;
