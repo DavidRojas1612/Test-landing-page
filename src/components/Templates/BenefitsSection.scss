@@ -2,7 +2,7 @@
 @import "../shared/mixins.scss";
 
 .benefits{
-    padding: 1rem;
+
     &__container{
         flex-grow: 1;
         display: flex;
@@ -10,12 +10,14 @@
         .item__description{
             flex:1;
             min-width: 50%;
+            flex-direction: column;
         }
     }
 
     &__title{
         font-weight: normal;
         text-align: center;
+        padding: 2rem 1rem;
         & span{
             color:color(primary);
         }

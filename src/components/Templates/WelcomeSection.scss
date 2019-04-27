@@ -3,8 +3,16 @@
 
 .welcome{
     font-size: 1.5rem;
-    padding: 1rem;
-    justify-content: center;
+    background: url('../../assets/Backgrounds/Bg_Header.png');
+    background-size: contain;
+    justify-content: space-around;
+    @include from($medium){
+        flex-direction: row;
+        align-items: center;
+        // &__img{
+        //     max-width: 50%;
+        // }
+    }
     &__title{
         font-weight: normal;
         span{
@@ -17,3 +25,5 @@
         }
     }
 }
+
+// url('../../assets/ImgHero/Ic_ilustra_Hero.png') no-repeat 0% 80%,

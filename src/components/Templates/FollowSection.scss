@@ -2,6 +2,10 @@
 @import "../shared/mixins.scss";
 
 .follow{
+    padding: 0;
+    @include from($medium){
+        height: calc(100vh - 2.85rem);
+    }
     &__container{
         flex-basis: 50%;
         display: flex;
@@ -25,6 +29,7 @@
     &__title{
         font-weight: normal;
         text-align: center;
+        width: 100%;
         span{
             &:last-of-type{
                 color: color(primary);

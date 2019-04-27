@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './typography.scss';
+@import './mixins.scss';
 
 html {
   box-sizing: border-box;
@@ -48,9 +49,21 @@ p{
 
 section{
   width: 100%;
-  height: calc(100vh - 2.85rem);
+  // height: calc(100vh - 2.85rem);
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+
+  @include from($medium){
+    height: auto;
+  }
+  @include from($large){
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // height: 50vh;
+  }
 }
 img {
   display: block;

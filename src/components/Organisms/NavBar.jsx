@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, N } from "react-router-dom";
 import Button from "../Atoms/Button";
 import "./NavBar.scss";
 
@@ -20,12 +20,10 @@ const NavBar = ({handleClass, customClass}) => (
         <a className="navbar__link" href='#requerimientos'> Requerimientos </a>
       </li>
       <li className="navbar__item">
-        <Link to="/cliente/nuevo">
-          <Button theme="button--primary__outline">Login</Button>
-        </Link>
+        <NavLink to="/cliente/nuevo" className="button--primary__outline navbar__link--button">Login</NavLink>
       </li>
       <li className="navbar__item">
-          <Button theme="button--secondary" onClick={handleClass}>Cerrar</Button>
+          <Button theme="button--secondary navbar__link--button" onClick={handleClass}>Volver</Button>
       </li>
     </ul>
   </nav>

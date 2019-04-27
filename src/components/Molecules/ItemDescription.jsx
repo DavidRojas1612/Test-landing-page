@@ -3,7 +3,7 @@ import './ItemDescription.scss'
 const ItemDescription = ({logo, label}) => (
     <div className="item__description">
       <img  className="item__description__logo" src={logo} alt="" />
-      <p className="Item__description__p">{label}</p>
+      <p className="item__description__p">{label}</p>
     </div>
   )
 

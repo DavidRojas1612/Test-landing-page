@@ -3,23 +3,45 @@
 
 
 .header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    background: url('./../../assets/Backgrounds/Bg_Header.png') color(white);
+    background-color: color(white);
+    &__item{
+        display: flex;
+        align-items: center;
+    }
 
+    &__menu-icon{
+        fill: color(primary);
+    }
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.25rem 1rem;
+        padding: 0.5rem 1rem;
+
+        &--nav{
+            width: 100vw;
+      
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            background-color: rgba(34, 34, 34,0.6);
+            left: 0;
+            height: 0;
+           
+
+            &.viewNavbar{
+                height: 100vh;
+            }
+        }
     }
 
     &__logo{
-        // width: 150px;
-        // height: 24px;
+        
         width: 100px;
         height: 24px;
     }

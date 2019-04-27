@@ -38,7 +38,7 @@ const Benefits = [
 const BenefitsSection = () => (
     <section className="benefits">
       <h2 className="benefits__title">
-        Entre los beneficions que ofrecemos se encuentran <span> ;)</span>
+        Entre los beneficios que ofrecemos se encuentran <span> ;) </span>
       </h2>
       <div className="benefits__container">
         {Benefits.map(({ logo, label }, i) => (
@@ -46,7 +46,5 @@ const BenefitsSection = () => (
         ))}
       </div>
     </section>
-);
-
-
+)
 export default BenefitsSection;

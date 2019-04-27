@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo_full_color.svg";
+import { ReactComponent as Menu } from "../../assets/burguerMenu.svg"; 
 import NavBar from "./NavBar";
 import "./Header.scss";
 import Button from "../Atoms/Button";
@@ -16,14 +17,12 @@ const Header = () => {
         </a>
       </div>
       <div className="header__item">
-        <div
-          className="header__menu-icon"
-        >
-          <Button theme="button--primary__outline" onClick={() => setMenu(!stateMenu)}>Menu</Button>
-        </div>
+      <Menu className="header__menu-icon" onClick={() => setMenu(!stateMenu)} />
       </div>
     </div>
-    <NavBar customClass={ stateMenu && 'viewNavbar'} handleClass={() => setMenu(!stateMenu)}/>
+    <div className={`header__container--nav ${ stateMenu && 'viewNavbar'}`}>
+      <NavBar customClass={ stateMenu ? 'viewNavbar' : 'outNavbar'} handleClass={() => setMenu(!stateMenu)}/>
+    </div>
     </header>
   );
 };

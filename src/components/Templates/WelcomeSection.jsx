@@ -6,7 +6,9 @@ const WelcomeSection = () => (
     <h1 className="welcome__title">
       Bienvenido a tu <span>Entrevista Técnica</span> en <span>Wolox</span>
     </h1>
-    <img src={lchero} alt=""/>
+    <div className="welcome__container">
+      <img className="welcome__img" src={lchero} alt=""/>
+    </div>
   </section>
 );
 
