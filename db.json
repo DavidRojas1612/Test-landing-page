@@ -1,5 +1,12 @@
 {
-  "sign_in": [],
+  "sign_in": [
+    {
+      "nombre": "dadsdas",
+      "apellido": "dasdasdas",
+      "email": "dadasdasd",
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,

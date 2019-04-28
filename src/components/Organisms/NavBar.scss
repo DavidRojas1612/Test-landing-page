@@ -16,6 +16,15 @@
     right: 0;
   }
 
+  @include from($large){
+    position: relative;
+    width: 100%;
+    &.outNavbar{
+      right: 0em;
+    }
+
+  }
+
   &__list{
     display: flex;
     flex-direction: column;
@@ -24,6 +33,14 @@
     height: 100vh;
     width: 100%;
     // justify-content: space-around;
+    @include from($medium){
+        justify-content: center;
+    }
+    @include from($large){
+      flex-direction: row;
+      padding: 0;
+      height: auto;
+    }
   }
   
   &__item {
@@ -33,16 +50,36 @@
     align-items: center;
     width: 100%;
     justify-content: flex-start; 
+    font-weight: 600;
 
+    @include from($large){
+      justify-content: center;
+      font-size: 1.2em;
+      padding: 0;
+      height: 100%;
+      flex-basis: 12.5rem;
+      &:last-of-type{
+        transform: scale(0);
+        position: absolute;
+      }
+    }
 
   }
 
   &__link{
-    color: color(black);
+    color: color(black-font);
+    display: block;
+    width: 100%;
+    @include from($large){
+        text-align: center;
+    }
     &--button{
       width: 100%;
       text-align: center;
       line-height: 1.1;  
+      @include from($large){
+          width:90%;
+      }
     }
   }
   

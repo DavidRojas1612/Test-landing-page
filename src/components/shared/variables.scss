@@ -1,7 +1,7 @@
 $max-width: 1200px;
 $small: 320px;
 $medium: 640px;
-$large: 1200px;
+$large: 1024px;
 
 $easing: cubic-bezier(0.54, 0.11, 0.24, 1.3);
 $transform-time: 0.3s;
@@ -12,6 +12,7 @@ $colors: (
   secondary: #9FC739,
   border-color: #dfe0e0,
   black: #000000,
+  black-font:#333333,
   white: #ffffff,
   grey: #b1b1b8,
 	grey-secundary: #E0DDDD,

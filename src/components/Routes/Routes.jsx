@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Dashboard from '../Pages/Dashboard'
+import Login from '../Pages/Login';
 const PrivateRoute = ({ component: Component, authed, ...rest }) => (
   <Route
     {...rest}
@@ -22,6 +23,7 @@ const PublicRoute = ({ component: Component, authed, ...rest }) => (
 const Routes = ({ authed }) => (
   <Switch>
     <PublicRoute path='/' authed={authed} exact component={Dashboard} />
+    <PublicRoute path='/login' authed={authed} exact component={Login} />
 
     {/* <PrivateRoute authed={authed} exact path='/' component={Customers} />
     <PrivateRoute

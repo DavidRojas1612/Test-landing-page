@@ -6,11 +6,17 @@
     @include from($medium){
         height: calc(100vh - 2.85rem);
     }
+
+    @include from($large){
+        width: 100%;
+        padding: 2rem;
+    }
     &__container{
         flex-basis: 50%;
         display: flex;
         align-items: center;
         background-color: rgb(242,245,250);
+        height: 80%;
 
         &:first-child{
             color: color(white);
@@ -30,6 +36,9 @@
         font-weight: normal;
         text-align: center;
         width: 100%;
+        @include from($large){
+            font-size: 2em;
+        }
         span{
             &:last-of-type{
                 color: color(primary);

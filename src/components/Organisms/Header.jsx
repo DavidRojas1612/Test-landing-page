@@ -10,12 +10,10 @@ const Header = () => {
 
   return (
     <header className="header">
-    <div className="header__container">
-      <div className="header__item">
+    <div className="header__container header__item">
         <a className="header__link" href="/">
           <Logo className="header__logo" />
         </a>
-      </div>
       <div className="header__item">
       <Menu className="header__menu-icon" onClick={() => setMenu(!stateMenu)} />
       </div>

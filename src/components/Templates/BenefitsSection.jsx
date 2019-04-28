@@ -36,7 +36,7 @@ const Benefits = [
 ];
 
 const BenefitsSection = () => (
-    <section className="benefits">
+    <section className="benefits  l-container" id='beneficios'>
       <h2 className="benefits__title">
         Entre los beneficios que ofrecemos se encuentran <span> ;) </span>
       </h2>

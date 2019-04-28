@@ -1,53 +1,85 @@
 @import "../shared/variables.scss";
 @import "../shared/mixins.scss";
 
-
 .header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: color(white);
-    &__item{
-        display: flex;
-        align-items: center;
-    }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: color(white);
+  &__item {
+    display: flex;
+    align-items: center;
+  }
 
-    &__menu-icon{
-        fill: color(primary);
-    }
-    &__container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 1rem;
+  @include from($large) {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    padding: 3.5rem 7.5rem;
+  }
 
-        &--nav{
-            width: 100vw;
-      
-            position: absolute;
-            top: 0;
-            z-index: 10;
-            background-color: rgba(34, 34, 34,0.6);
-            left: 0;
-            height: 0;
-           
+  &__menu-icon {
+    fill: color(primary);
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
 
-            &.viewNavbar{
-                height: 100vh;
-            }
+    &.header__item {
+      @include from($large) {
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+
+        .header__item {
+          transform: scale(0);
+          position: absolute;
         }
+      }
     }
 
-    &__logo{
-        
-        width: 100px;
-        height: 24px;
-    }
+    &--nav {
+      width: 100vw;
 
-    &__link{
-        display: block;
-        line-height: 0;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      background-color: rgba(34, 34, 34, 0.6);
+      left: 0;
+      height: 0;
+
+      &.viewNavbar {
+        height: 100vh;
+      }
+
+      @include from($large) {
+        position: relative;
+        flex: 4;
+        height: auto;
+
+        &.viewNavbar {
+          height: auto;
+        }
+      }
     }
+  }
+
+  &__logo {
+    width: 100px;
+    height: 24px;
+
+    @include from($large) {
+      width: 12rem;
+      height: auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    line-height: 0;
+  }
 }

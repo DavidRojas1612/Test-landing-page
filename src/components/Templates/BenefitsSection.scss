@@ -2,15 +2,37 @@
 @import "../shared/mixins.scss";
 
 .benefits{
-
+    @include from($large){
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__container{
         flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
         .item__description{
             flex:1;
             min-width: 50%;
             flex-direction: column;
+            @include from($large){
+                min-width: auto;
+            }
+        }
+
+        @include from($large){
+            padding: 3rem;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            left: 0;
+            bottom: 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
     }
 
@@ -20,6 +42,9 @@
         padding: 2rem 1rem;
         & span{
             color:color(primary);
+        }
+        @include from($large){
+            font-size: 2em;
         }
     }
 }
