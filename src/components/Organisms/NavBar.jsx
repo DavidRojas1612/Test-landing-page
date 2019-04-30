@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Button from "../Atoms/Button";
 import { connect } from "react-redux";
 import "./NavBar.scss";
@@ -10,53 +11,57 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
       {!authed ? (
         <>
           <li className="navbar__item">
-            <NavLink
+            <Link
               className="navbar__link"
               onClick={handleClass}
               to="/#inicio"
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
               Inicio{" "}
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
-            <NavLink
+            <Link
               className="navbar__link"
               onClick={handleClass}
               to="/#tecnologias"
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
               Tecnologías{" "}
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
-            <NavLink
+            <Link
               className="navbar__link"
               onClick={handleClass}
               to="/#beneficios"
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
               Beneficios{" "}
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
-            <NavLink
+            <Link
               className="navbar__link"
               onClick={handleClass}
               to="/#requerimientos"
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             >
               {" "}
               Requerimientos{" "}
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
-            <NavLink
+            <Link
               to="/login"
               onClick={handleClass}
               className="button--primary__outline navbar__link--button"
             >
               Login
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
             <Button
@@ -70,13 +75,13 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
       ) : (
         <>
           <li className="navbar__item">
-            <NavLink
+            <Link
               to="/products"
               onClick={handleClass}
               className="navbar__link"
             >
               Productos
-            </NavLink>
+            </Link>
           </li>
           <li className="navbar__item">
             <h3 className="navbar__title">{user.nombre}</h3>
