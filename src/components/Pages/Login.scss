@@ -44,8 +44,5 @@
             display: flex;
             justify-content: flex-end;
         }
-        @include from($large){
-            width: 260px;
-        }
     }   
 }

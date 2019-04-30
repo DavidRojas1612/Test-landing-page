@@ -35,7 +35,7 @@ const Products = ({ products, getProducts, history, errorMessage, setProducts })
         <>
           <Input
             placeholder="Search"
-            theme="login__input"
+            theme="products__search"
             onKeyDown={e => handleSearchProducts(e)}
           />
           <div className="products__container">
