@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Input from '../Atoms/Input'
 import Button from '../Atoms/Button';
 import { connect } from 'react-redux'
-import { logIn } from '../../actions'
+import { logIn } from '../../store/actions'
 import './Login.scss'
 import logo  from './../../assets/logo_full_color.svg'
 class Login extends Component {

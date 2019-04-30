@@ -2,7 +2,7 @@ import React from "react";
 import "./DetailCard.scss";
 
 const DetailCard = ({brand, category, dimensions, stock}) => (
-  <>
+  <div className="detail">
     <div className="detail-card">
       <div className="detail-card__container">
         <h3 className="detail-card__date">Brand </h3>
@@ -27,7 +27,7 @@ const DetailCard = ({brand, category, dimensions, stock}) => (
         <h3 className="detail-card__date">Out Stock</h3>
       )}
     </div>
-  </>
+  </div>
 );
 
 export default DetailCard;

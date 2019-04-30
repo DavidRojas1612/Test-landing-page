@@ -25,6 +25,11 @@
 
   }
 
+  &__title{
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
   &__list{
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@
       flex-direction: row;
       padding: 0;
       height: auto;
+      justify-content: space-between;
     }
   }
   

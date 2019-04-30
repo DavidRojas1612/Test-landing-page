@@ -1,6 +1,6 @@
 import { IS_AUTHED,SET_PRODUCTS,SET_MESSAGE_ERROR } from './actionsConst'
 import axios from 'axios'
-import { formatProducts } from '../providers/formatData';
+import { formatProducts } from '../../providers/formatData';
 
 export const setProducts = value => ({ type: SET_PRODUCTS, payload: value })
 const isAuthed = value => ({ type: IS_AUTHED, payload: value })

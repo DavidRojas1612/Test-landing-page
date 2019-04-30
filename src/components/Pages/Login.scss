@@ -17,6 +17,7 @@
         &:first-of-type{
             display: flex;
             flex-basis: 25%;
+            width: 80%;
         }
         @include from($large){
             width: 30%;

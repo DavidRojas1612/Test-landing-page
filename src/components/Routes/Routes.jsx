@@ -8,7 +8,7 @@ const PrivateRoute = ({ component: Component, authed, ...rest }) => (
   <Route
     {...rest}
     render={props =>
-      authed === true ? <Component {...props} /> : <Redirect to='/' />
+      authed === true ? <Component {...props} /> : <Redirect to='/login' />
     }
   />
 )
@@ -43,19 +43,3 @@ const Routes = ({ authed }) => (
 
 export default Routes
 
-/*
-    <PublicRoute path='/' authed={authed} exact component={Customers} />
-    <PrivateRoute
-      authed={authed}
-      exact
-      path='/dashboard'
-      component={Dashboard}
-    />
-    <PrivateRoute
-      exact
-      path='/cliente/editar/:id'
-      authed={authed}
-      component={Theme}
-    />
-
-*/

@@ -25,7 +25,7 @@ const Product = ({ match, products }) => {
     />
   }
   return (
-    <section className="product">
+    <section className="product l-container">
       { product 
         ? handleCard(product)
         : <Loader />

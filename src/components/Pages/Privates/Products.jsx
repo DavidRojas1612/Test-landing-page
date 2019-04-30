@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import "./Products.scss";
-import { getProducts, setProducts } from "../../../actions";
+import { getProducts, setProducts } from "../../../store/actions";
 import { connect } from "react-redux";
 import Loader from "../../Atoms/Loader";
 import Input from "../../Atoms/Input";
