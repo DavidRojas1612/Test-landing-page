@@ -389,6 +389,12 @@
       "apellido": "rojas",
       "email": "daivd@daivd.com",
       "id": 65
+    },
+    {
+      "nombre": "david",
+      "apellido": "rojas",
+      "email": "david@david.com",
+      "id": 66
     }
   ],
   "products": [
