@@ -9,16 +9,10 @@
         flex-direction: column;
         background-size: cover;
     }
-    &__container{
+    &__container {
         width: 100%;
         flex-basis: 50%;
         background-color: color(white);
-
-        &:first-of-type{
-            display: flex;
-            flex-basis: 25%;
-            width: 80%;
-        }
         @include from($large){
             width: 30%;
             margin: 0 auto;
@@ -28,16 +22,30 @@
                 position: absolute;
             }
         }
+
+        & .input{
+            margin: 1rem 0;
+            &:last-of-type{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        &:first-of-type{
+            display: flex;
+            flex-basis: 25%;
+            width: 80%;
+        }
     }
 
-
-    
-}
-
-.input{
-    padding: 0.5rem 1rem;
-    &__button{
-        display: flex;
-        justify-content: flex-end;
-    }
+    &__input{
+        padding: 0.5rem 1rem;
+        &__button{
+            display: flex;
+            justify-content: flex-end;
+        }
+        @include from($large){
+            width: 260px;
+        }
+    }   
 }

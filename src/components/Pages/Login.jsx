@@ -16,7 +16,7 @@ class Login extends Component {
       }
   
       handleInputForm = (e, field) => {
-        const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+        const emailRegex = /^(\w|\.)*@\w{2,}\.\w{2,}$/i
 
         let user = {
           [field]:  field === 'email'
@@ -79,7 +79,7 @@ class Login extends Component {
                 />
                 <div className="input input__button">
                   <Button 
-                      theme="button--primary"
+                      theme="button__primary"
                       disabled={!this.state.valid}
                       onClick={this.executeLogin}
                   >

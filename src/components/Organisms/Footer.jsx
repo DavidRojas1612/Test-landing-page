@@ -10,7 +10,7 @@ const Footer = () => (
       <h3 className="footer__subtitle">
         Te invitamos a ver más información
       </h3>
-      <a href="https://www.wolox.com.ar/" className="button--primary ">
+      <a href="https://www.wolox.com.ar/" className="button__primary ">
         Conoce más
       </a>
     </div>

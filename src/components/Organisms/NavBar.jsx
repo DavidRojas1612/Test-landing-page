@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Button from "../Atoms/Button";
 import { connect } from "react-redux";
 import "./NavBar.scss";
+import Back from '../../assets/left-arrow.svg'
 
 const NavBar = ({ handleClass, customClass, authed, user }) => (
   <nav className={`navbar l-container ${customClass || ""}`}>
@@ -57,18 +58,13 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               to="/login"
               onClick={handleClass}
-              className="button--primary__outline navbar__link--button"
+              className="button__primary__outline navbar__link--button"
             >
               Login
             </Link>
           </li>
           <li className="navbar__item">
-            <Button
-              theme={`button--secondary navbar__link--button`}
-              onClick={handleClass}
-            >
-              Volver
-            </Button>
+              <img src={Back} onClick={handleClass} className="button__secondary navbar__link--button" alt="" />
           </li>
         </>
       ) : (
@@ -86,12 +82,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <h3 className="navbar__title">{user.nombre}</h3>
           </li>
           <li className="navbar__item">
-            <Button
-              theme={`button--secondary navbar__link--button`}
-              onClick={handleClass}
-            >
-              Volver
-            </Button>
+              <img src={Back} onClick={handleClass} className="button__secondary navbar__link--button" alt="" />
           </li>
         </>
       )}
