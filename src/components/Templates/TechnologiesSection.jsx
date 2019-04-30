@@ -1,9 +1,9 @@
 import React from 'react'
-import './TechnologySection.scss'
+import './TechnologiesSection.scss'
 import { ReactComponent as LogoTech } from '../../assets/Ic_Tecnologys.svg'
 
-const TechnologySection = () => (
-    <section className="technology l-container" id='technologys'>
+const TechnologiesSection = () => (
+    <section className="technology l-container" id='technologies'>
       <h1 className="technology__title">
        Estamos buscando incorporar gente increíble para estas tecnologías: 
       </h1>
@@ -12,4 +12,4 @@ const TechnologySection = () => (
   )
 
 
-export default TechnologySection
+export default TechnologiesSection

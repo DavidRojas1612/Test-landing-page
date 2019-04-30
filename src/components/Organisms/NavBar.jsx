@@ -24,7 +24,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               className="navbar__link"
               onClick={handleClass}
-              to="/#technologys"
+              to="/#technologies"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import WelcomeSection from '../Templates/WelcomeSection';
-import TechnologySection from '../Templates/TechnologySection';
+import TechnologiesSection from '../Templates/TechnologiesSection';
 import FollowSection from '../Templates/FollowSection';
 import BenefitsSection from "../Templates/BenefitsSection";
 import RequirementsSection from "../Templates/RequirementsSection";
@@ -8,7 +8,7 @@ import Footer from "../Organisms/Footer";
 const Dashboard = () => (
   <>
     <WelcomeSection />
-    <TechnologySection />
+    <TechnologiesSection />
     <FollowSection />
     <BenefitsSection />
     <RequirementsSection />

@@ -83,7 +83,7 @@ class Login extends Component {
                       disabled={!this.state.valid}
                       onClick={this.executeLogin}
                   >
-                      Iniciar Sesion
+                      Log In
                   </Button>
                 </div>
                 </div>
