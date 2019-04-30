@@ -1,6 +1,5 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-
 import Button from "../Atoms/Button";
 import { connect } from "react-redux";
 import "./NavBar.scss";
