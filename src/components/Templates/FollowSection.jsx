@@ -16,7 +16,7 @@ const FollowSection = () => (
         href="https://www.twitter.com/wolox"
         className="button__primary__outline  button__transparent"
       >
-        Siguenos
+        Síguenos
       </a>
     </div>
     <div className="follow__container">

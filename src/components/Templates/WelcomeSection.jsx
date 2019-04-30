@@ -2,7 +2,7 @@ import React from "react";
 import "./WelcomeSection.scss";
 import lchero from '../../assets/ImgHero/Ic_ilustra_Hero@3x.png'
 const WelcomeSection = () => (
-  <section className="welcome l-container" id='inicio'>
+  <section className="welcome l-container" id='home'>
     <div className="welcome__container">
     <h1 className="welcome__title">
       Bienvenido a tu <span>Entrevista Técnica</span> en <span>Wolox</span>

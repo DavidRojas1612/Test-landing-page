@@ -8,8 +8,8 @@ import logo  from './../../assets/logo_full_color.svg'
 class Login extends Component {
     state = {
         user: {
-          nombre: '',
-          apellido: '',
+          name: '',
+          lastname: '',
           email: '',
         },
         valid: false
@@ -59,16 +59,16 @@ class Login extends Component {
                 </div>
               <div className='login__container l-container'>
                 <Input
-                  name='Nombre'
-                  placeholder='Nombre'
+                  name='Name'
+                  placeholder='Name'
                   theme='login__input'
-                  onChange={e =>(this.handleInputForm(e, 'nombre'))}
+                  onChange={e =>(this.handleInputForm(e, 'name'))}
                 />
                 <Input
-                  name='Apellido'
-                  placeholder='Apellido'
+                  name='last name'
+                  placeholder='last name'
                   theme='login__input'
-                  onChange={e => this.handleInputForm(e, 'apellido')}
+                  onChange={e => this.handleInputForm(e, 'lastname')}
                 />
                 <Input
                   name='Email'

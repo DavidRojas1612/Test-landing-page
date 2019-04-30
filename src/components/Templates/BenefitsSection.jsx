@@ -31,12 +31,12 @@ const Benefits = [
   },
   {
     logo: Brian,
-    label: "Trabajar en ultimas tecnologías"
+    label: "Trabajar en últimas tecnologías"
   }
 ];
 
 const BenefitsSection = () => (
-    <section className="benefits  l-container" id='beneficios'>
+    <section className="benefits  l-container" id='benefits'>
       <h2 className="benefits__title">
         Entre los beneficios que ofrecemos se encuentran <span> ;) </span>
       </h2>

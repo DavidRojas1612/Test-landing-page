@@ -1,9 +1,8 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import Button from "../Atoms/Button";
 import { connect } from "react-redux";
 import "./NavBar.scss";
-import Back from '../../assets/left-arrow.svg'
+import { ReactComponent as BackArrow }  from '../../assets/left-arrow.svg'
 
 const NavBar = ({ handleClass, customClass, authed, user }) => (
   <nav className={`navbar l-container ${customClass || ""}`}>
@@ -14,7 +13,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               className="navbar__link"
               onClick={handleClass}
-              to="/#inicio"
+              to="/#home"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
@@ -25,7 +24,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               className="navbar__link"
               onClick={handleClass}
-              to="/#tecnologias"
+              to="/#technologys"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
@@ -36,7 +35,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               className="navbar__link"
               onClick={handleClass}
-              to="/#beneficios"
+              to="/#benefits"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
             >
               {" "}
@@ -47,7 +46,7 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <Link
               className="navbar__link"
               onClick={handleClass}
-              to="/#requerimientos"
+              to="/#requirements"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             >
               {" "}
@@ -64,7 +63,9 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             </Link>
           </li>
           <li className="navbar__item">
-              <img src={Back} onClick={handleClass} className="button__secondary navbar__link--button" alt="" />
+            <BackArrow 
+              className="button navbar__link--button"
+              onClick={handleClass} />
           </li>
         </>
       ) : (
@@ -79,10 +80,12 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             </Link>
           </li>
           <li className="navbar__item">
-            <h3 className="navbar__title">{user.nombre}</h3>
+            <h3 className="navbar__title">{user.name}</h3>
           </li>
-          <li className="navbar__item">
-              <img src={Back} onClick={handleClass} className="button__secondary navbar__link--button" alt="" />
+          <li className="navbar__item" onClick={handleClass}>
+              <BackArrow 
+                className="button navbar__link--button" 
+                onClick={handleClass}/>
           </li>
         </>
       )}

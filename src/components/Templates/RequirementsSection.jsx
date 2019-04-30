@@ -19,7 +19,7 @@ const requirements = [
   }
 ]
 const RequirementsSection = () => (
-  <section className="requirements l-container" id='requerimientos'>
+  <section className="requirements l-container" id='requirements'>
     <h1 className="requirements__title">
       Requerimientos
     </h1>

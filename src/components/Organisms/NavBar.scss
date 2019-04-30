@@ -28,6 +28,9 @@
   &__title{
     text-transform: capitalize;
     font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid color(grey);
+    text-align: center;
   }
 
   &__list{
@@ -58,9 +61,11 @@
     justify-content: flex-start; 
     font-weight: 600;
 
-    & .button__secondary{
+
+    & .button{
       max-height: 35px;
       padding: 0;
+      background-color: color(secondary);
     }
 
     @include from($large){

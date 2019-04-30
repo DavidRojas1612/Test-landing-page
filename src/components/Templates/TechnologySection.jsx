@@ -3,7 +3,7 @@ import './TechnologySection.scss'
 import { ReactComponent as LogoTech } from '../../assets/Ic_Tecnologys.svg'
 
 const TechnologySection = () => (
-    <section className="technology l-container" id='tecnologias'>
+    <section className="technology l-container" id='technologys'>
       <h1 className="technology__title">
        Estamos buscando incorporar gente increíble para estas tecnologías: 
       </h1>
