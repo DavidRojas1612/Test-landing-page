@@ -4,7 +4,7 @@ import {
   SET_MESSAGE_ERROR,
   SET_PRODUCT
 
-} from '../../actions/actionsConst'
+} from '../actions/actionsConst'
 
 const initialState = {
   authed:false,
