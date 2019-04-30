@@ -1,0 +1,46 @@
+@import "../shared/variables.scss";
+@import "../shared/mixins.scss";
+
+.card{
+    
+    border: 1px solid color(grey);
+    margin: 1rem 0;
+    border-radius: 0.25em;
+    position: relative;
+    box-shadow: 0 1px 5px #ccc;
+
+    @include from($medium){
+        max-width: 20rem;
+    }
+
+    @include from($large){
+        margin: 1rem;
+    }
+    
+    
+    &__container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid color(grey);
+        padding: 1rem;
+    }
+    
+    &__price {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+
+    &__date{
+        font-weight: 500;
+        &.date__main{
+            margin-right: 15px;
+        }
+    }
+    
+    &__img{
+        padding: 1rem;
+    }
+}

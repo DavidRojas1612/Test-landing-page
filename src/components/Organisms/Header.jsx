@@ -3,7 +3,6 @@ import { ReactComponent as Logo } from "../../assets/logo_full_color.svg";
 import { ReactComponent as Menu } from "../../assets/burguerMenu.svg"; 
 import NavBar from "./NavBar";
 import "./Header.scss";
-import Button from "../Atoms/Button";
 
 const Header = () => {
   const [stateMenu, setMenu] = useState(false);

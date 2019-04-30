@@ -1,0 +1,39 @@
+@import "../../shared/variables.scss";
+@import "../../shared/mixins.scss";
+
+
+.products{
+    padding: 40px 1rem 1rem;
+    .input{
+        padding: 1rem 0 0;
+        @include from($large){
+            padding: 1rem;
+        }
+    }
+    @include from($large){
+        flex-wrap: wrap;
+    }
+
+    &__container{
+        widows: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        @include from($large){
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.error{
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-weight: normal;
+        color: color(primary);
+    }
+}

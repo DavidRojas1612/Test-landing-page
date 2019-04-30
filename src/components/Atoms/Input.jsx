@@ -15,7 +15,8 @@ const Input = ({
   ref,
   placeholder,
   theme,
-  onKeyDown
+  onKeyDown,
+  onChange
 }) => (
     <div className='input'>
       <label className='input__label'>
@@ -33,7 +34,8 @@ const Input = ({
           defaultValue={defaultValue}
           autoComplete={autoComplete}
           disabled={disabled}
-          onChange={onKeyDown}
+          onKeyDown={onKeyDown}
+          onChange={onChange}
           ref={ref}
         />
       </label>

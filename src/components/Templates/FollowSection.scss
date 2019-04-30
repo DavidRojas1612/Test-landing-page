@@ -36,6 +36,7 @@
         font-weight: normal;
         text-align: center;
         width: 100%;
+        padding: 0 1rem;
         @include from($large){
             font-size: 2em;
         }

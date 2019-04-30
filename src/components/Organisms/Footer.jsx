@@ -7,7 +7,7 @@ const Footer = () => (
       <h1 className="footer__title">
         Gracias por <span> completar el ejercicio </span>
       </h1>
-      <h3 className="footer__title">
+      <h3 className="footer__subtitle">
         Te invitamos a ver más información
       </h3>
       <a href="https://www.wolox.com.ar/" className="button--primary ">

@@ -9,24 +9,26 @@
     padding: 8px 12px;
     font-family: $font;
     border-radius: 5px;
-    border: 1px solid color(border-color);
+    border: 1px solid color(grey);
     outline: none;
     min-width: 250px;
     width: 100%;
 
     &--secondary {
-      background: lighten(color(border-color), 10);
+      background: lighten(color(grey), 10);
     }
 
-    &:focus, &:focus:hover {
-      border: 2px solid #2684FF
+    &:focus{
+      // border: 1.5px solid color(primary);
+      box-shadow: 0 1px 5px #ccc;
     }
+
     &:focus-within {
-      border: 1px solid #2684FF
+      border: 1px solid color(primary);
     }
 
     &:hover{
-      border-color: #ccc;
+      border-color: color(grey);
     }
   }
 

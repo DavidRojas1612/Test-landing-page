@@ -16,13 +16,21 @@
 
     &__title{
         text-align: center;
-        &:first-of-type span{
+        &:first-of-type {
+            span{
             color:color(primary);
+            }
+            @include from($large){
+                font-size: 3em;
+            }
         }
-        &:last-of-type{
-            font-weight: normal;
-        }
+    }
 
+    &__subtitle{
+        font-weight: normal;  
+        @include from($large){
+            font-size: 2em;
+        }
     }
 
     &__img{
