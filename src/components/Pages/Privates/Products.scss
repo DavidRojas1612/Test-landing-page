@@ -15,7 +15,10 @@
     }
 
     &__search{
-        width: auto;
+        width: 100%;
+        @include from($large){
+            width: 16.25rem;
+        }
     }
 
     &__container{
