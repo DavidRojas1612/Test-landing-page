@@ -14,7 +14,6 @@ const Product = ({ match, products }) => {
   }, []);
 
   const handleCard = ({ id, name, price, sku, image, ...detail }) => {
-    console.log("detail", detail);
     return (
       <Card
         key={id}

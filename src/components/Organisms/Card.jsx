@@ -3,7 +3,14 @@ import "./Card.scss";
 import DetailCard from "../Molecules/DetailCard";
 
 const Card = ({ name, price, sku, handleProduct, image, detail }) => {
-  const handleDetail = props => <DetailCard {...props} />;
+  const handleDetail = ({ brand, category, dimensions, stock }) => (
+    <DetailCard
+      brand={brand}
+      category={category}
+      dimensions={dimensions}
+      stock={stock}
+    />
+  );
 
   return (
     <>
