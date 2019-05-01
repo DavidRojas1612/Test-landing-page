@@ -1,48 +1,48 @@
 @import "../shared/variables.scss";
 @import "../shared/mixins.scss";
 
-.login{
-    padding: 40px 1rem;
-    display: flex;
-    align-items: center;
-    @include from($large){
-        flex-direction: column;
-        background-size: cover;
-    }
-    &__container {
-        width: 100%;
-        flex-basis: 50%;
-        background-color: color(white);
-        @include from($large){
-            width: 30%;
-            margin: 0 auto;
-            border-radius: 0.25rem;
-            .login__img{
-                transform: scale(0);
-                position: absolute;
-            }
-        }
-
-        & .input{
-            margin: 1rem 0;
-            &:last-of-type{
-                display: flex;
-                justify-content: flex-end;
-            }
-        }
-
-        &:first-of-type{
-            display: flex;
-            flex-basis: 25%;
-            width: 80%;
-        }
+.login {
+  padding: 40px 1rem;
+  display: flex;
+  align-items: center;
+  @include from($large) {
+    flex-direction: column;
+    background-size: cover;
+  }
+  &__container {
+    width: 100%;
+    flex-basis: 50%;
+    background-color: color(white);
+    @include from($large) {
+      width: 30%;
+      margin: 0 auto;
+      border-radius: 0.25rem;
+      .login__img {
+        transform: scale(0);
+        position: absolute;
+      }
     }
 
-    &__input{
-        padding: 0.5rem 1rem;
-        &__button{
-            display: flex;
-            justify-content: flex-end;
-        }
-    }   
+    & .input {
+      margin: 1rem 0;
+      &:last-of-type {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    &:first-of-type {
+      display: flex;
+      flex-basis: 25%;
+      width: 80%;
+    }
+  }
+
+  &__input {
+    padding: 0.5rem 1rem;
+    &__button {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }

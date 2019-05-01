@@ -1,6 +1,6 @@
-@import './variables.scss';
-@import './typography.scss';
-@import './mixins.scss';
+@import "./variables.scss";
+@import "./typography.scss";
+@import "./mixins.scss";
 
 html {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
   font-family: $font;
   color: color(black);
   line-height: 1.6;
-  @include from($large){
+  @include from($large) {
     padding: 0;
   }
   & * {
@@ -46,11 +46,11 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   margin: 0;
 }
 
-section{
+section {
   width: 100%;
   // height: calc(100vh - 2.85rem);
   height: 100vh;
@@ -58,10 +58,10 @@ section{
   flex-direction: column;
   padding: 1rem;
 
-  @include from($medium){
+  @include from($medium) {
     height: auto;
   }
-  @include from($large){
+  @include from($large) {
     flex-direction: row;
     align-items: center;
     justify-content: center;

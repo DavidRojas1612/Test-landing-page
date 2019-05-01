@@ -7,8 +7,13 @@ import Loader from "../../Atoms/Loader";
 import Input from "../../Atoms/Input";
 import Card from "../../Organisms/Card";
 
-const Products = ({ products, getProducts, history, errorMessage, setProducts }) => {
-  
+const Products = ({
+  products,
+  getProducts,
+  history,
+  errorMessage,
+  setProducts
+}) => {
   useEffect(() => {
     getProducts();
   }, []);

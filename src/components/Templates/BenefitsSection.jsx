@@ -36,15 +36,15 @@ const Benefits = [
 ];
 
 const BenefitsSection = () => (
-    <section className="benefits  l-container" id='benefits'>
-      <h2 className="benefits__title">
-        Entre los beneficios que ofrecemos se encuentran <span> ;) </span>
-      </h2>
-      <div className="benefits__container">
-        {Benefits.map(({ logo, label }, i) => (
-          <ItemDescription key={i} logo={logo} label={label} />
-        ))}
-      </div>
-    </section>
-)
+  <section className="benefits  l-container" id="benefits">
+    <h2 className="benefits__title">
+      Entre los beneficios que ofrecemos se encuentran <span> ;) </span>
+    </h2>
+    <div className="benefits__container">
+      {Benefits.map(({ logo, label }, i) => (
+        <ItemDescription key={i} logo={logo} label={label} />
+      ))}
+    </div>
+  </section>
+);
 export default BenefitsSection;

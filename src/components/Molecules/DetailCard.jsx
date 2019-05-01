@@ -1,7 +1,7 @@
 import React from "react";
 import "./DetailCard.scss";
 
-const DetailCard = ({brand, category, dimensions, stock}) => (
+const DetailCard = ({ brand, category, dimensions, stock }) => (
   <div className="detail">
     <div className="detail-card">
       <div className="detail-card__container">

@@ -8,15 +8,13 @@ $transform-time: 0.3s;
 
 $colors: (
   body-bg: #fcfcfc,
-  primary: #00A7E8,
-  secondary: #9FC739,
+  primary: #00a7e8,
+  secondary: #9fc739,
   black: #000000,
-  black-font:#333333,
+  black-font: #333333,
   white: #ffffff,
-  grey: #dfe2e2,
-
+  grey: #dfe2e2
 );
-
 
 @function color($color) {
   @if map-has-key($map: $colors, $key: $color) {

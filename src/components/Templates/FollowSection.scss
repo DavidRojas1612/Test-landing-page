@@ -1,73 +1,73 @@
 @import "../shared/variables.scss";
 @import "../shared/mixins.scss";
 
-.follow{
-    padding: 0;
-    @include from($medium){
-        height: calc(100vh - 2.85rem);
-    }
+.follow {
+  padding: 0;
+  @include from($medium) {
+    height: calc(100vh - 2.85rem);
+  }
 
-    @include from($large){
-        width: 100%;
-        padding: 2rem;
-    }
-    &__container{
-        flex-basis: 50%;
-        display: flex;
-        align-items: center;
-        background-color: rgb(242,245,250);
-        height: 80%;
+  @include from($large) {
+    width: 100%;
+    padding: 2rem;
+  }
+  &__container {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 245, 250);
+    height: 80%;
 
-        &:first-child{
-            color: color(white);
-            flex-direction: column;
-            justify-content: center;
-            background: url('../../assets/img_woloxer.png');
-            background-size: cover;
-        }
+    &:first-child {
+      color: color(white);
+      flex-direction: column;
+      justify-content: center;
+      background: url("../../assets/img_woloxer.png");
+      background-size: cover;
     }
+  }
 
-    &__subcontainer{
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.5rem;
+  &__subcontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    @include from($large) {
+      font-size: 2em;
     }
-    &__title{
-        font-weight: normal;
-        text-align: center;
-        width: 100%;
-        padding: 0 1rem;
-        @include from($large){
-            font-size: 2em;
-        }
-        span{
-            &:last-of-type{
-                color: color(primary);
-                font-weight: bold;
-            }
-            &:first-of-type{
-                color: color(secondary);
-                font-weight: bold;
-            }
-        }
+    span {
+      &:last-of-type {
+        color: color(primary);
+        font-weight: bold;
+      }
+      &:first-of-type {
+        color: color(secondary);
+        font-weight: bold;
+      }
     }
-    &__p{
-        text-align: center;
-        font-size: 2rem;
-        &--twitter{
-            fill: color(white);
-            width: 2rem;
-            margin-right:0.2rem; 
-        }
-        span{
-            &:first-of-type{
-                color: color(primary);
-                font-weight: bold;
-            }
-            &:last-of-type{
-                color: color(secondary);
-                font-weight: bold;
-            }
-        }
+  }
+  &__p {
+    text-align: center;
+    font-size: 2rem;
+    &--twitter {
+      fill: color(white);
+      width: 2rem;
+      margin-right: 0.2rem;
     }
+    span {
+      &:first-of-type {
+        color: color(primary);
+        font-weight: bold;
+      }
+      &:last-of-type {
+        color: color(secondary);
+        font-weight: bold;
+      }
+    }
+  }
 }

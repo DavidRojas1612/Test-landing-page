@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo_full_color.svg";
-import { ReactComponent as Menu } from "../../assets/burguerMenu.svg"; 
+import { ReactComponent as Menu } from "../../assets/burguerMenu.svg";
 import NavBar from "./NavBar";
 import "./Header.scss";
 
@@ -9,17 +9,23 @@ const Header = () => {
 
   return (
     <header className="header">
-    <div className="header__container header__item">
+      <div className="header__container header__item">
         <a className="header__link" href="/">
           <Logo className="header__logo" />
         </a>
-      <div className="header__item">
-      <Menu className="header__menu-icon" onClick={() => setMenu(!stateMenu)} />
+        <div className="header__item">
+          <Menu
+            className="header__menu-icon"
+            onClick={() => setMenu(!stateMenu)}
+          />
+        </div>
       </div>
-    </div>
-    <div className={`header__container--nav ${ stateMenu && 'viewNavbar'}`}>
-      <NavBar customClass={ stateMenu ? 'viewNavbar' : 'outNavbar'} handleClass={() => setMenu(!stateMenu)}/>
-    </div>
+      <div className={`header__container--nav ${stateMenu && "viewNavbar"}`}>
+        <NavBar
+          customClass={stateMenu ? "viewNavbar" : "outNavbar"}
+          handleClass={() => setMenu(!stateMenu)}
+        />
+      </div>
     </header>
   );
 };

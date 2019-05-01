@@ -1,12 +1,12 @@
 @import "../../shared/variables.scss";
 @import "../../shared/mixins.scss";
 
-.product{
-    padding-top: 40px;
-    @include from($large){
-        flex-wrap: wrap;
-        width: 60%;
-        justify-content: center;
-        align-items: flex-start;
-    }
+.product {
+  padding-top: 40px;
+  @include from($large) {
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }

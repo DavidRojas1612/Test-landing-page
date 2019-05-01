@@ -1,8 +1,8 @@
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 import { connect } from "react-redux";
 import "./NavBar.scss";
-import { ReactComponent as BackArrow }  from '../../assets/left-arrow.svg'
+import { ReactComponent as BackArrow } from "../../assets/left-arrow.svg";
 
 const NavBar = ({ handleClass, customClass, authed, user }) => (
   <nav className={`navbar l-container ${customClass || ""}`}>
@@ -14,7 +14,9 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
               className="navbar__link"
               onClick={handleClass}
               to="/#home"
-              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              scroll={el =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
             >
               {" "}
               Inicio{" "}
@@ -25,7 +27,9 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
               className="navbar__link"
               onClick={handleClass}
               to="/#technologies"
-              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              scroll={el =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
             >
               {" "}
               Tecnologías{" "}
@@ -36,7 +40,9 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
               className="navbar__link"
               onClick={handleClass}
               to="/#benefits"
-              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              scroll={el =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
             >
               {" "}
               Beneficios{" "}
@@ -47,7 +53,9 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
               className="navbar__link"
               onClick={handleClass}
               to="/#requirements"
-              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              scroll={el =>
+                el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
             >
               {" "}
               Requerimientos{" "}
@@ -63,19 +71,16 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             </Link>
           </li>
           <li className="navbar__item">
-            <BackArrow 
+            <BackArrow
               className="button navbar__link--button"
-              onClick={handleClass} />
+              onClick={handleClass}
+            />
           </li>
         </>
       ) : (
         <>
           <li className="navbar__item">
-            <Link
-              to="/products"
-              onClick={handleClass}
-              className="navbar__link"
-            >
+            <Link to="/products" onClick={handleClass} className="navbar__link">
               Productos
             </Link>
           </li>
@@ -83,9 +88,10 @@ const NavBar = ({ handleClass, customClass, authed, user }) => (
             <h3 className="navbar__title">{user.name}</h3>
           </li>
           <li className="navbar__item" onClick={handleClass}>
-              <BackArrow 
-                className="button navbar__link--button" 
-                onClick={handleClass}/>
+            <BackArrow
+              className="button navbar__link--button"
+              onClick={handleClass}
+            />
           </li>
         </>
       )}
